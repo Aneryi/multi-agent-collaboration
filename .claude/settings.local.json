@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/pip install *)",
+      "Bash(.venv/Scripts/python -c \"from mase.llm import create_narrative_llm, DeepSeekNarrativeLLM, RuleBasedNarrativeLLM; print\\('✅ llm imports OK'\\); llm = create_narrative_llm\\(\\); print\\(f'Default adapter: {type\\(llm\\).__name__}'\\)\")",
+      "Bash(.venv/Scripts/python -c \"from mase.llm import create_narrative_llm, DeepSeekNarrativeLLM, RuleBasedNarrativeLLM; print\\('llm imports OK'\\); llm = create_narrative_llm\\(\\); print\\('Default adapter:', type\\(llm\\).__name__\\)\")",
+      "Bash(.venv/Scripts/python -c \"from mase.service import StoryService; print\\('service imports OK'\\)\")",
+      "Bash(.venv/Scripts/python -c \"from mase.api.app import app; print\\('API app imports OK'\\)\")",
+      "Bash(.venv/Scripts/python -m pytest tests/ -v)"
+    ]
+  }
+}
