@@ -12,6 +12,7 @@ dependencies = [
   "fastapi>=0.110",
   "langchain-core>=0.2",
   "langgraph>=0.2",
+  "langsmith>=0.1.0",
   "openai>=1.0",
   "pydantic>=2.7",
   "python-dotenv>=1.0",
@@ -21,6 +22,9 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
   "pytest>=8.0"
+]
+langgraph-api = [
+  "langgraph-cli>=0.1.55"
 ]
 
 [tool.setuptools.packages.find]
